@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opt-In for SMS Notifications</title>
+    <title>SMS Opt-In | BSF Jets</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
-        }
-        form {
-            margin-top: 20px;
-        }
-        input, button {
-            padding: 10px;
-            margin: 5px;
-            width: 100%;
-        }
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; text-align: center; }
+        form { margin-top: 20px; }
+        input, button { padding: 10px; margin: 5px; width: 100%; }
+        .consent-text { font-size: 14px; color: gray; text-align: left; margin-top: 10px; }
     </style>
 </head>
 <body>
-    <h2>Opt-In for Flight SMS Notifications</h2>
-    <p>By entering your phone number and clicking "Subscribe," you consent to receive SMS notifications about your flights. Message and data rates may apply.</p>
+    <h2>Subscribe to SMS Flight Notifications</h2>
+    <p>Stay updated with your flight schedule! Enter your phone number to receive SMS notifications.</p>
+    
     <form action="/subscribe" method="post">
         <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        <div class="consent-text">
+            <input type="checkbox" required> 
+            I consent to receive SMS notifications from BSF Jets. Message and data rates may apply. Reply STOP to opt out.
+        </div>
         <button type="submit">Subscribe</button>
     </form>
-    <p>You can opt out at any time by replying STOP.</p>
+
+    <h3>Opt-In & Opt-Out Details</h3>
+    <p>By subscribing, you agree to receive SMS notifications regarding flight scheduling. You can opt out at any time by replying **STOP**. Standard message and data rates may apply.</p>
+
+    <h4>Need Help?</h4>
+    <p>Reply **HELP** for assistance or contact support at <a href="mailto:support@bsfjets.com">support@bsfjets.com</a>.</p>
 </body>
 </html>
