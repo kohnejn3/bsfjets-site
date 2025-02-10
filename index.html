@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opt-In for SMS Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Opt-In for Flight SMS Notifications</h2>
+    <p>By entering your phone number and clicking "Subscribe," you consent to receive SMS notifications about your flights. Message and data rates may apply.</p>
+    <form action="/subscribe" method="post">
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <p>You can opt out at any time by replying STOP.</p>
+</body>
+</html>
