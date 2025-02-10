@@ -15,14 +15,15 @@
     <h2>Subscribe to SMS Flight Notifications</h2>
     <p>Stay updated with your flight schedule! Enter your phone number to receive SMS notifications.</p>
     
-    <form action="/subscribe" method="post">
-        <input type="tel" name="phone" placeholder="Enter your phone number" required>
-        <div class="consent-text">
-            <input type="checkbox" required> 
-            I consent to receive SMS notifications from BSF Jets. Message and data rates may apply. Reply STOP to opt out.
-        </div>
-        <button type="submit">Subscribe</button>
-    </form>
+<form action="thank-you.html" method="post" onsubmit="window.location.href='thank-you.html'; return false;">
+    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+    <div class="consent-text">
+        <input type="checkbox" required> 
+        I consent to receive SMS notifications from BSF Jets. Message and data rates may apply. Reply STOP to opt out.
+    </div>
+    <button type="submit">Subscribe</button>
+</form>
+
 
     <h3>Opt-In & Opt-Out Details</h3>
     <p>By subscribing, you agree to receive SMS notifications regarding flight scheduling. You can opt out at any time by replying **STOP**. Standard message and data rates may apply.</p>
